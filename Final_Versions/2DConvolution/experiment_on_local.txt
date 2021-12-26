@@ -1,0 +1,265 @@
+problem size = 4096*4096, TB == 32*32 and stream = 8
+Matrix dim = 4096x4096, block_size = 32x32, streams = 0
+Naive version
+1.6508
+22.4093
+0.170992
+0.0000
+Matrix dim = 4096x4096, block_size = 32x32, streams = 0
+With constant memory
+1.5765
+22.5876
+0.177313
+0.0000
+Matrix dim = 4096x4096, block_size = 32x32, streams = 0
+With shared memory
+2.0552
+22.7007
+0.170513
+0.4815
+Matrix dim = 4096x4096, block_size = 32x32, streams = 8
+With stream implemented
+1.8904
+15.4516
+0.172725
+0.3368
+Matrix dim = 4096x4096, block_size = 32x32, streams = 0
+With constant and shared memory
+2.3233
+23.0463
+0.193080
+0.4815
+Matrix dim = 4096x4096, block_size = 32x32, streams = 8
+With stream and constant memory implementation
+1.8391
+15.1542
+0.180892
+0.3368
+Matrix dim = 4096x4096, block_size = 32x32, streams = 8
+Final version
+2.0027
+15.5503
+0.173100
+6.5918
+
+problem size = 8192*8192, TB == 32*32 and stream = 8
+Matrix dim = 8192x8192, block_size = 32x32, streams = 0
+Naive version
+7.1625
+91.1022
+0.686425
+0.0000
+Matrix dim = 8192x8192, block_size = 32x32, streams = 0
+With constant memory
+7.3542
+92.4974
+0.690232
+0.0000
+Matrix dim = 8192x8192, block_size = 32x32, streams = 0
+With shared memory
+9.3047
+97.0219
+0.680456
+0.4356
+Matrix dim = 8192x8192, block_size = 32x32, streams = 8
+With stream implemented
+7.9312
+64.0635
+0.690384
+0.1685
+Matrix dim = 8192x8192, block_size = 32x32, streams = 0
+With constant and shared memory
+8.2083
+90.5866
+0.709299
+0.4356
+Matrix dim = 8192x8192, block_size = 32x32, streams = 8
+With stream and constant memory implementation
+10.1412
+67.181
+0.731130
+0.1685
+Matrix dim = 8192x8192, block_size = 32x32, streams = 8
+Final version
+8.3230
+67.5193
+0.695894
+6.4206
+
+problem size = 16384*16384, TB == 32*32 and stream = 8
+Matrix dim = 16384x16384, block_size = 32x32, streams = 0
+Naive version
+21.8749
+360.29
+3.225238
+0.0000
+Matrix dim = 16384x16384, block_size = 32x32, streams = 0
+With constant memory
+24.8440
+359.802
+2.741596
+0.0000
+Matrix dim = 16384x16384, block_size = 32x32, streams = 0
+With shared memory
+35.8436
+384.393
+2.734653
+0.4128
+Matrix dim = 16384x16384, block_size = 32x32, streams = 8
+With stream implemented
+28.5529
+253.627
+2.671861
+0.0842
+Matrix dim = 16384x16384, block_size = 32x32, streams = 0
+With constant and shared memory
+27.6338
+365.855
+2.657380
+0.4128
+Matrix dim = 16384x16384, block_size = 32x32, streams = 8
+With stream and constant memory implementation
+30.1452
+255.776
+2.697907
+0.0842
+Matrix dim = 16384x16384, block_size = 32x32, streams = 8
+Final version
+34.1689
+258.693
+2.683412
+6.3351
+
+problem size = 4096*4096, TB == 16*16 and stream = 8
+Matrix dim = 4096x4096, block_size = 16x16, streams = 0
+Naive version
+1.4427
+24.0375
+0.171772
+0.0000
+Matrix dim = 4096x4096, block_size = 16x16, streams = 0
+Naive version
+1.4545
+23.1467
+0.167867
+0.0000
+Matrix dim = 4096x4096, block_size = 16x16, streams = 0
+With constant memory
+1.4835
+24.8059
+0.168280
+0.0000
+Matrix dim = 4096x4096, block_size = 16x16, streams = 0
+With shared memory
+2.4279
+23.0385
+0.167553
+1.6426
+Matrix dim = 4096x4096, block_size = 16x16, streams = 8
+With stream implemented
+1.3280
+14.814
+0.167347
+0.3368
+Matrix dim = 4096x4096, block_size = 16x16, streams = 0
+With constant and shared memory
+2.5740
+23.1521
+0.170611
+1.6425
+Matrix dim = 4096x4096, block_size = 16x16, streams = 8
+With stream and constant memory implementation
+1.3258
+15.2904
+0.169140
+0.3368
+Matrix dim = 4096x4096, block_size = 16x16, streams = 8
+Final version
+2.1913
+15.616
+0.167369
+12.8118
+
+problem size = 4096*4096 and TB == 8*8
+Matrix dim = 4096x4096, block_size = 8x8, streams = 0
+Naive version
+2.6772
+23.2169
+0.169262
+0.0000
+Matrix dim = 4096x4096, block_size = 8x8, streams = 0
+With constant memory
+2.8291
+24.8681
+0.171945
+0.0000
+Matrix dim = 4096x4096, block_size = 8x8, streams = 0
+With shared memory
+3.9892
+26.12
+0.171325
+6.3110
+Matrix dim = 4096x4096, block_size = 8x8, streams = 8
+With stream implemented
+1.2572
+14.8951
+0.166850
+0.3368
+Matrix dim = 4096x4096, block_size = 8x8, streams = 0
+With constant and shared memory
+3.7577
+26.9494
+0.167694
+6.3108
+Matrix dim = 4096x4096, block_size = 8x8, streams = 8
+With stream and constant memory implementation
+1.3087
+16.1852
+0.167909
+0.3368
+Matrix dim = 4096x4096, block_size = 8x8, streams = 8
+Final version
+3.3178
+-6.04142e-28
+0.174314
+18.1828
+
+problem size = 4096*4096, TB == 32*32 and stream = 16
+Matrix dim = 4096x4096, block_size = 32x32, streams = 16
+With stream implemented
+1.8711
+15.0522
+0.167280
+0.7220
+Matrix dim = 4096x4096, block_size = 32x32, streams = 16
+With stream and constant memory implementation
+1.8854
+17.3483
+0.169196
+0.7220
+Matrix dim = 4096x4096, block_size = 32x32, streams = 16
+Final version
+2.0447
+15.8904
+0.168187
+6.9611
+
+problem size = 4096*4096, TB == 32*32 and stream = 32
+Matrix dim = 4096x4096, block_size = 32x32, streams = 32
+With stream implemented
+1.9874
+16.1377
+0.172884
+1.4920
+Matrix dim = 4096x4096, block_size = 32x32, streams = 32
+With stream and constant memory implementation
+1.9282
+15.7879
+0.193391
+1.4920
+Matrix dim = 4096x4096, block_size = 32x32, streams = 32
+Final version
+2.0450
+-2.85748e-33
+0.173740
+5.6165

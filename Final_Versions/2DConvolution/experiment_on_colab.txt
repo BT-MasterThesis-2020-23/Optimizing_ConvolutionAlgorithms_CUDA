@@ -1,0 +1,272 @@
+problem size = 4096*4096, TB == 32*32 and stream = 8
+Matrix dim = 4096x4096, block_size = 32x32, streams = 0
+Naive version
+3.2688
+30.2615
+0.356614
+0.0000
+Matrix dim = 4096x4096, block_size = 32x32, streams = 0
+With constant memory
+3.2513
+30.0847
+0.345150
+0.0000
+Matrix dim = 4096x4096, block_size = 32x32, streams = 0
+With shared memory
+2.6737
+29.4238
+0.348252
+0.4807
+Matrix dim = 4096x4096, block_size = 32x32, streams = 8
+With stream implemented
+3.4787
+24.0182
+0.341123
+0.3368
+Matrix dim = 4096x4096, block_size = 32x32, streams = 0
+With constant and shared memory
+2.6816
+29.4479
+0.352043
+0.4808
+Matrix dim = 4096x4096, block_size = 32x32, streams = 8
+With stream and constant memory implementation
+3.4865
+23.7832
+0.340424
+0.3368
+Matrix dim = 4096x4096, block_size = 32x32, streams = 8
+Final version
+2.8050
+23.4483
+0.353609
+6.5878
+
+problem size = 8192*8192, TB == 32*32 and stream = 8
+Matrix dim = 8192x8192, block_size = 32x32, streams = 0
+Naive version
+12.5926
+117.421
+1.407238
+0.0000
+Matrix dim = 8192x8192, block_size = 32x32, streams = 0
+With constant memory
+12.6932
+117.2
+1.359829
+0.0000
+Matrix dim = 8192x8192, block_size = 32x32, streams = 0
+With shared memory
+10.2627
+116.083
+1.364759
+0.4351
+Matrix dim = 8192x8192, block_size = 32x32, streams = 8
+With stream implemented
+13.1499
+92.1539
+1.369589
+0.1685
+Matrix dim = 8192x8192, block_size = 32x32, streams = 0
+With constant and shared memory
+9.3679
+103.716
+1.367031
+0.4350
+Matrix dim = 8192x8192, block_size = 32x32, streams = 8
+With stream and constant memory implementation
+11.8408
+81.8116
+1.370949
+0.1685
+Matrix dim = 8192x8192, block_size = 32x32, streams = 8
+Final version
+9.3608
+80.4958
+1.372773
+6.4165
+
+problem size = 16384*16384, TB == 32*32 and stream = 8
+tcmalloc: large alloc 1073741824 bytes == 0x5585d386a000 @  0x7f41808641e7 0x5585d1c1f9c4 0x7f417f895bf7 0x5585d1c1d38a
+Matrix dim = 16384x16384, block_size = 32x32, streams = 0
+Naive version
+46.0393
+391.313
+6.492235
+0.0000
+tcmalloc: large alloc 1073741824 bytes == 0x55fa6d9b6000 @  0x7f78841171e7 0x55fa6b6109c4 0x7f7883148bf7 0x55fa6b60e38a
+Matrix dim = 16384x16384, block_size = 32x32, streams = 0
+With constant memory
+51.2228
+438.462
+5.401129
+0.0000
+tcmalloc: large alloc 1073741824 bytes == 0x564542838000 @  0x7f1d1a6911e7 0x564540ad59c4 0x7f1d196c2bf7 0x564540ad338a
+Matrix dim = 16384x16384, block_size = 32x32, streams = 0
+With shared memory
+29.9667
+327.321
+5.396204
+0.4122
+tcmalloc: large alloc 1073741824 bytes == 0x55afe3198000 @  0x7f7ee9cf41e7 0x55afe04349c4 0x7f7ee8d25bf7 0x55afe043238a
+Matrix dim = 16384x16384, block_size = 32x32, streams = 8
+With stream implemented
+51.9297
+347.486
+5.378604
+0.0842
+tcmalloc: large alloc 1073741824 bytes == 0x5644b4f68000 @  0x7fc70a1ec1e7 0x5644b25d09c4 0x7fc70921dbf7 0x5644b25ce38a
+Matrix dim = 16384x16384, block_size = 32x32, streams = 0
+With constant and shared memory
+33.4686
+360.862
+5.450902
+0.4122
+tcmalloc: large alloc 1073741824 bytes == 0x5648e127e000 @  0x7f0903eca1e7 0x5648dfae79c4 0x7f0902efbbf7 0x5648dfae538a
+Matrix dim = 16384x16384, block_size = 32x32, streams = 8
+With stream and constant memory implementation
+51.2900
+343.426
+5.437314
+0.0842
+tcmalloc: large alloc 1073741824 bytes == 0x5598d2426000 @  0x7fd4a722d1e7 0x5598d060d9c4 0x7fd4a625ebf7 0x5598d060b38a
+Matrix dim = 16384x16384, block_size = 32x32, streams = 8
+Final version
+32.1359
+276.871
+5.487425
+6.3310
+
+problem size = 4096*4096, TB == 16*16 and stream = 8
+Matrix dim = 4096x4096, block_size = 16x16, streams = 0
+Naive version
+4.2292
+30.8333
+0.346843
+0.0000
+Matrix dim = 4096x4096, block_size = 16x16, streams = 0
+Naive version
+4.2148
+30.9115
+0.340042
+0.0000
+Matrix dim = 4096x4096, block_size = 16x16, streams = 0
+With constant memory
+4.2203
+30.923
+0.344742
+0.0000
+Matrix dim = 4096x4096, block_size = 16x16, streams = 0
+With shared memory
+3.2902
+30.1169
+0.341001
+1.6427
+Matrix dim = 4096x4096, block_size = 16x16, streams = 8
+With stream implemented
+3.3594
+24.0073
+0.346165
+0.3368
+Matrix dim = 4096x4096, block_size = 16x16, streams = 0
+With constant and shared memory
+3.2532
+30.3154
+0.351927
+1.6426
+Matrix dim = 4096x4096, block_size = 16x16, streams = 8
+With stream and constant memory implementation
+3.3797
+23.8716
+0.343991
+0.3368
+Matrix dim = 4096x4096, block_size = 16x16, streams = 8
+Final version
+3.3329
+23.9412
+0.337199
+12.8112
+
+problem size = 4096*4096 and TB == 8*8
+Matrix dim = 4096x4096, block_size = 8x8, streams = 0
+Naive version
+6.9169
+33.6978
+0.343043
+0.0000
+Matrix dim = 4096x4096, block_size = 8x8, streams = 0
+With constant memory
+6.9086
+33.6259
+0.337237
+0.0000
+Matrix dim = 4096x4096, block_size = 8x8, streams = 0
+With shared memory
+4.9967
+31.7291
+0.345156
+6.3028
+Matrix dim = 4096x4096, block_size = 8x8, streams = 8
+With stream implemented
+3.5481
+23.8226
+0.334065
+0.3368
+Matrix dim = 4096x4096, block_size = 8x8, streams = 0
+With constant and shared memory
+4.9901
+31.8875
+0.347802
+6.3028
+Matrix dim = 4096x4096, block_size = 8x8, streams = 8
+With stream and constant memory implementation
+3.5161
+23.9299
+0.348923
+0.3368
+Matrix dim = 4096x4096, block_size = 8x8, streams = 8
+Final version
+5.1255
+25.5612
+0.346265
+6.7026
+
+problem size = 4096*4096, TB == 32*32 and stream = 16
+Matrix dim = 4096x4096, block_size = 32x32, streams = 16
+With stream implemented
+3.6271
+23.958
+0.340315
+0.7220
+Matrix dim = 4096x4096, block_size = 32x32, streams = 16
+With stream and constant memory implementation
+3.6561
+24.1307
+0.349101
+0.7220
+Matrix dim = 4096x4096, block_size = 32x32, streams = 16
+Final version
+2.9421
+23.4134
+0.341491
+6.9568
+
+problem size = 4096*4096, TB == 32*32 and stream = 32
+Matrix dim = 4096x4096, block_size = 32x32, streams = 32
+With stream implemented
+3.9977
+24.6584
+0.342533
+1.4920
+Matrix dim = 4096x4096, block_size = 32x32, streams = 32
+With stream and constant memory implementation
+3.9777
+25.1979
+0.344188
+1.4920
+Matrix dim = 4096x4096, block_size = 32x32, streams = 32
+Final version
+3.2693
+24.2655
+0.348677
+2.6202
