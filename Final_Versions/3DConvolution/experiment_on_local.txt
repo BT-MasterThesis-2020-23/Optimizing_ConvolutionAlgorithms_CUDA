@@ -1,0 +1,263 @@
+data size = 128*128*128, tb size = 16*16, num_stream = 8
+Matrix dim = 128x128x128, block_size = 16x16, streams = 0
+Naive version
+0.5413
+3.6744
+0.042843
+Failure in percent: 0.0000
+Matrix dim = 128x128x128, block_size = 16x16, streams = 0
+With constant memory
+1.1507
+4.22029
+0.042976
+Failure in percent: 0.0000
+Matrix dim = 128x128x128, block_size = 16x16, streams = 0
+With shared memory
+1.6152
+4.62077
+0.045958
+Failure in percent: 3.0002
+Matrix dim = 128x128x128, block_size = 16x16, streams = 0
+With constant and shared memory
+1.5873
+4.65872
+0.044358
+Failure in percent: 3.0003
+Matrix dim = 128x128x128, block_size = 16x16, streams = 8
+With stream implemented
+0.8116
+3.71856
+0.043395
+Failure in percent: 0.5768
+Matrix dim = 128x128x128, block_size = 16x16, streams = 8
+With stream and constant memory implementation
+0.8010
+3.87654
+0.044680
+Failure in percent: 0.5768
+Matrix dim = 128x128x128, block_size = 16x16, streams = 8
+Final version
+1.2908
+4.32144
+0.043081
+Failure in percent: 3.5625
+ 
+data size = 256*256*256, tb size = 16*16, num_stream = 8
+Matrix dim = 256x256x256, block_size = 16x16, streams = 0
+Naive version
+2.8013
+23.326
+0.355412
+Failure in percent: 0.0000
+Matrix dim = 256x256x256, block_size = 16x16, streams = 0
+With constant memory
+2.8996
+24.7918
+0.350833
+Failure in percent: 0.0000
+Matrix dim = 256x256x256, block_size = 16x16, streams = 0
+With shared memory
+7.5405
+29.4864
+0.361878
+Failure in percent: 1.5299
+Matrix dim = 256x256x256, block_size = 16x16, streams = 0
+With constant and shared memory
+7.5496
+28.1365
+0.349868
+Failure in percent: 1.5300
+Matrix dim = 256x256x256, block_size = 16x16, streams = 8
+With stream implemented
+3.3368
+18.6524
+0.348674
+Failure in percent: 0.2907
+Matrix dim = 256x256x256, block_size = 16x16, streams = 8
+With stream and constant memory implementation
+3.3592
+18.9193
+0.346677
+Failure in percent: 0.2907
+Matrix dim = 256x256x256, block_size = 16x16, streams = 8
+Final version
+7.2079
+24.8151
+0.358060
+Failure in percent: 1.8171
+ 
+data size = 512*512*512, tb size = 16*16, num_stream = 8
+Matrix dim = 512x512x512, block_size = 16x16, streams = 0
+Naive version
+18.5337
+184.588
+2.914062
+Failure in percent: 0.0000
+Matrix dim = 512x512x512, block_size = 16x16, streams = 0
+With constant memory
+24.7836
+200.548
+2.896951
+Failure in percent: 0.0000
+Matrix dim = 512x512x512, block_size = 16x16, streams = 0
+With shared memory
+51.8527
+222.195
+2.866173
+Failure in percent: 0.7726
+Matrix dim = 512x512x512, block_size = 16x16, streams = 0
+With constant and shared memory
+55.2881
+223.248
+2.936010
+Failure in percent: 0.7726
+Matrix dim = 512x512x512, block_size = 16x16, streams = 8
+With stream implemented
+19.1869
+138.99
+2.915487
+Failure in percent: 0.1459
+Matrix dim = 512x512x512, block_size = 16x16, streams = 8
+With stream and constant memory implementation
+19.2216
+135.846
+2.848926
+Failure in percent: 0.1459
+Matrix dim = 512x512x512, block_size = 16x16, streams = 8
+Final version
+49.7322
+170.58
+2.822547
+Failure in percent: 0.9176
+ 
+data size = 512*512*512, tb size = 32*32, num_stream = 8
+Matrix dim = 512x512x512, block_size = 32x32, streams = 0
+Naive version
+20.3499
+189.654
+2.865071
+Failure in percent: 0.0000
+Matrix dim = 512x512x512, block_size = 32x32, streams = 0
+With constant memory
+20.0414
+191.919
+2.841111
+Failure in percent: 0.0000
+Matrix dim = 512x512x512, block_size = 32x32, streams = 0
+With shared memory
+44.4076
+212.452
+2.885181
+Failure in percent: 0.7726
+Matrix dim = 512x512x512, block_size = 32x32, streams = 0
+With constant and shared memory
+40.6915
+210.349
+2.882566
+Failure in percent: 0.7726
+Matrix dim = 512x512x512, block_size = 32x32, streams = 8
+With stream implemented
+21.4480
+138.774
+2.877444
+Failure in percent: 0.1459
+Matrix dim = 512x512x512, block_size = 32x32, streams = 8
+With stream and constant memory implementation
+21.5456
+140.383
+2.935475
+Failure in percent: 0.1459
+Matrix dim = 512x512x512, block_size = 32x32, streams = 8
+Final version
+40.4369
+156.451
+2.875188
+Failure in percent: 0.9176
+ 
+data size = 256*256*256, tb size = 32*32, num_stream = 16
+Matrix dim = 256x256x256, block_size = 32x32, streams = 0
+Naive version
+3.1718
+26.3514
+0.373380
+Failure in percent: 0.0000
+Matrix dim = 256x256x256, block_size = 32x32, streams = 0
+With constant memory
+3.0379
+23.6934
+0.359098
+Failure in percent: 0.0000
+Matrix dim = 256x256x256, block_size = 32x32, streams = 0
+With shared memory
+6.5624
+30.0386
+0.352744
+Failure in percent: 1.5302
+Matrix dim = 256x256x256, block_size = 32x32, streams = 0
+With constant and shared memory
+7.7064
+28.7497
+0.353768
+Failure in percent: 1.5301
+Matrix dim = 256x256x256, block_size = 32x32, streams = 16
+With stream implemented
+3.5601
+23.546
+0.350241
+Failure in percent: 0.2907
+Matrix dim = 256x256x256, block_size = 32x32, streams = 16
+With stream and constant memory implementation
+3.3997
+19.8493
+0.351625
+Failure in percent: 0.2907
+Matrix dim = 256x256x256, block_size = 32x32, streams = 16
+Final version
+6.3489
+22.8817
+0.357519
+Failure in percent: 1.8171
+ 
+data size = 256*256*256, tb size = 32*32, num_stream = 4
+Matrix dim = 256x256x256, block_size = 32x32, streams = 0
+Naive version
+2.7875
+23.3967
+0.357265
+Failure in percent: 0.0000
+Matrix dim = 256x256x256, block_size = 32x32, streams = 0
+With constant memory
+3.1449
+24.949
+0.352736
+Failure in percent: 0.0000
+Matrix dim = 256x256x256, block_size = 32x32, streams = 0
+With shared memory
+7.2382
+27.852
+0.356720
+Failure in percent: 1.5301
+Matrix dim = 256x256x256, block_size = 32x32, streams = 0
+With constant and shared memory
+7.8897
+29.7417
+0.364016
+Failure in percent: 1.5302
+Matrix dim = 256x256x256, block_size = 32x32, streams = 4
+With stream implemented
+3.3795
+21.5015
+0.355279
+Failure in percent: 0.2907
+Matrix dim = 256x256x256, block_size = 32x32, streams = 4
+With stream and constant memory implementation
+3.4190
+21.8314
+0.350109
+Failure in percent: 0.2907
+Matrix dim = 256x256x256, block_size = 32x32, streams = 4
+Final version
+6.2900
+22.658
+0.357516
+Failure in percent: 1.8170
