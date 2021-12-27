@@ -2,7 +2,7 @@
   - chmod +x run_experiment.sh
   - ./run_experiment.sh
 
-  2DConvolution includes 7 different experiments and 3DConvolution includes 6 different experiments. In those experiments, there are 7 different kernel configurations that operate on the same data. Those kernels are:
+  2DConvolution includes 7 different experiments and 3DConvolution includes 6 different experiments. In those experiments, there are 7 different kernel configurations that operate on the same data. These kernels are:
   1) **Naive:** Naive implementation
   2) **Constant memory:** This kernel stores the masking 2D-array into constant memory instead of storing them into registers.
   3) **Shared memory:** This kernel implements shared memory usage for repeating elements to decrease global memory traffic between GPU cores and GPU DRAM.  
