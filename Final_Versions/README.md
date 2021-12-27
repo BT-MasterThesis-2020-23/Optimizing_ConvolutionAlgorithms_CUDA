@@ -11,6 +11,6 @@
   6)  **Constant memory + Stream version:** This kernel uses stream and constant memory implementations together.
   7)  **Final:** This kernel joins constant memory, shared memory and stream usages to obtain the most optimized versions for 2D and 3D convolution operations.
 
-  Results for each experiment are shared in the .pdf files inside 2D-3DConvolution folders. Since my desktop computer cannot benefit from the shared memory (as mentioned in this link: ), I also carry out experiments on the Google-Colab which uses Tesla-K80 GPUs.
+  Results for each experiment are shared in the .pdf files inside 2D-3DConvolution folders. Since my desktop computer cannot benefit from the shared memory (as mentioned in this link: https://www.notebookcheck.net/NVIDIA-GeForce-GTX-1650-Super-Desktop-graphics-card-review.518027.0.html), I also carry out experiments on the Google-Colab which uses Tesla-K80 GPUs.
   
   I will share detailed explanations and comparison plots in both the final report and my presentation. 
