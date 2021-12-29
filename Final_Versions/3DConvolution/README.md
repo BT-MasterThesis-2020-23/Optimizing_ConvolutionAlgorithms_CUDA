@@ -1,6 +1,14 @@
 To re-run experiments on different GPU:
   - chmod +x run_experiments.sh
   - ./run_experiments.sh 
+   
+   
+  - **Experiment 1:** Problem size = 128x128x128, Thread Block = 16x16, # of stream = 8"
+  - **Experiment 2:** Problem size = 256x256x256, Thread Block = 16x16, # of stream = 8"
+  - **Experiment 3:** Problem size = 512x512x512, Thread Block = 16x16, # of stream = 8"
+  - **Experiment 4:** Problem size = 512x512x512, Thread Block = 32x32, # of stream = 8"
+  - **Experiment 5:** Problem size = 256x256x256, Thread Block = 32x32, # of stream = 16"
+  - **Experiment 6:** Problem size = 128x128x128, Thread Block = 16x16, # of stream = 4"
 
 **1) NVIDIA GEEFORCE GTX1650 DESKTOP**
 
