@@ -8,7 +8,7 @@ To re-run experiments on different GPU:
   - **Experiment 3:** Problem size = 512x512x512, Thread Block = 16x16, # of stream = 8"
   - **Experiment 4:** Problem size = 512x512x512, Thread Block = 32x32, # of stream = 8"
   - **Experiment 5:** Problem size = 256x256x256, Thread Block = 32x32, # of stream = 16"
-  - **Experiment 6:** Problem size = 128x128x128, Thread Block = 16x16, # of stream = 4"
+  - **Experiment 6:** Problem size = 256x256x256, Thread Block = 16x16, # of stream = 4"
 
 **1) NVIDIA GEEFORCE GTX1650 DESKTOP**
 
