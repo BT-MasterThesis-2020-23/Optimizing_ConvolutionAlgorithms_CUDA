@@ -1,0 +1,2 @@
+problem size = 256x256x256
+block dim = 32x32
