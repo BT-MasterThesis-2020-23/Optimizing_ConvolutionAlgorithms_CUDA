@@ -14,3 +14,7 @@
   Results for each experiment are shared in the .pdf files inside 2D-3DConvolution folders. Since my desktop computer cannot benefit from the shared memory (as mentioned in this link: https://www.notebookcheck.net/NVIDIA-GeForce-GTX-1650-Super-Desktop-graphics-card-review.518027.0.html), I also carry out experiments on the Google-Colab which uses Tesla-K80 GPUs.
   
   I will share detailed explanations and comparison plots in both the final report and my presentation. 
+  
+  To re-generate related plots (which are shared in the 2DConvolution and 3DConvolution folders) to compare the performance results of different kernel configurations, one can use the shared .xlsx files and generatePlotsFromMetrics.py code. 
+
+
